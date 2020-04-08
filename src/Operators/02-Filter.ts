@@ -8,7 +8,7 @@ import { filter, map } from 'rxjs/operators';
 range(5, 10).pipe(
 
     filter( (val, i) => {
-        console.log('index', i)
+        console.log('index', i);
         return val % 2 === 1;
     })
 
@@ -45,4 +45,4 @@ const keyup$ = fromEvent<KeyboardEvent>(document, 'keyup').pipe(
     filter(code => code === 'Enter')
 );
 
-keyup$.subscribe(console.log;
+keyup$.subscribe(console.log);
